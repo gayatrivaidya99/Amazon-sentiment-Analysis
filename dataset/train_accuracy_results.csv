@@ -1,0 +1,4 @@
+Model,Train Accuracy (%)
+TF-IDF (Logistic Regression),94.05
+Word2Vec (SVM),93.72500000000001
+BERT (Logistic Regression),97.375

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        input, button { padding: 10px; margin: 10px; }
+        .result { font-size: 20px; margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>Sentiment Analysis Tool</h2>
+    <form method="POST">
+        <input type="text" name="review" placeholder="Enter a review..." required>
+        <button type="submit">Predict Sentiment</button>
+    </form>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    {% if tfidf_sentiment %}
+        <h3 class="result">TF-IDF Model Prediction: {{ tfidf_sentiment }}</h3>
+    {% endif %}
+
+    {% if word2vec_sentiment %}
+        <h3 class="result">Word2Vec Model Prediction: {{ word2vec_sentiment }}</h3>
+    {% endif %}
+
+    {% if bert_sentiment %}
+        <h3 class="result">BERT Model Prediction: {{ bert_sentiment }}</h3>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,4 @@
+Model,Test Accuracy (%)
+TF-IDF (Logistic Regression),93.8
+Word2Vec (SVM),93.7
+BERT (Logistic Regression),94.3

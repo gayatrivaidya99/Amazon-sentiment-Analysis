@@ -1,0 +1,31 @@
+Model,Accuracy (%),Classification Report
+TF-IDF (Logistic Regression),93.8,"              precision    recall  f1-score   support
+
+    Negative       0.00      0.00      0.00        24
+    Positive       1.00      0.03      0.05        39
+     Neutral       0.94      1.00      0.97       937
+
+    accuracy                           0.94      1000
+   macro avg       0.65      0.34      0.34      1000
+weighted avg       0.92      0.94      0.91      1000
+"
+Word2Vec (SVM),93.7,"              precision    recall  f1-score   support
+
+    Negative       0.00      0.00      0.00        24
+    Positive       0.00      0.00      0.00        39
+     Neutral       0.94      1.00      0.97       937
+
+    accuracy                           0.94      1000
+   macro avg       0.31      0.33      0.32      1000
+weighted avg       0.88      0.94      0.91      1000
+"
+BERT (Logistic Regression),94.3,"              precision    recall  f1-score   support
+
+    Negative       0.62      0.21      0.31        24
+    Positive       0.50      0.21      0.29        39
+     Neutral       0.95      0.99      0.97       937
+
+    accuracy                           0.94      1000
+   macro avg       0.69      0.47      0.53      1000
+weighted avg       0.93      0.94      0.93      1000
+"
